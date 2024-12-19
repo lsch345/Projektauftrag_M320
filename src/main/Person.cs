@@ -1,6 +1,11 @@
 ﻿namespace Projekt_M320;
 
-public class Person
+public abstract class Person
 {
-    
+    public string Name { get; set; }
+
+    protected Person(string name)
+    {
+        Name = name;
+    }
 }
