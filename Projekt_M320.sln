@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Projekt_M320", "Projekt_M320.csproj", "{9A53A21D-B7FC-41CF-8894-879F401553BA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A53A21D-B7FC-41CF-8894-879F401553BA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A53A21D-B7FC-41CF-8894-879F401553BA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A53A21D-B7FC-41CF-8894-879F401553BA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A53A21D-B7FC-41CF-8894-879F401553BA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
