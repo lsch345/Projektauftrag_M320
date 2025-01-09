@@ -7,10 +7,10 @@ public class Program
         var table = new RouletteTable();
 
         var player1 = new Player("Noah", 1000);
-        //var player2 = new Player("Bob", 100);
+        var player2 = new Player("Timo", 100);
 
         table.Players.Add(player1);
-        //table.Players.Add(player2);
+        table.Players.Add(player2);
 
         bool playAgain;
 
