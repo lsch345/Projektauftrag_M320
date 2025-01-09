@@ -1,0 +1,67 @@
+﻿@startuml
+ 
+' Klasse: Person
+abstract class Person {
+    +string Name
+    #Person(name: string)
+}
+ 
+' Klasse: Player
+class Player {
+    +int Balance
+    +List<Bet> Bets
+    +Player(name: string, balance: int)
+    +PlaceBet(bet: Bet): void
+}
+Person <|-- Player
+Player --> Bet : has
+ 
+' Abstrakte Klasse: Bet
+abstract class Bet {
+    +int Amount
+    +string Type
+    #Bet(amount: int, type: string)
+    +Evaluate(result: int): bool
+}
+ 
+' Klasse: NumberBet
+class NumberBet {
+    +int Number
+    +NumberBet(amount: int, number: int)
+    +Evaluate(result: int): bool
+}
+Bet <|-- NumberBet
+ 
+' Klasse: ColorBet
+class ColorBet {
+    +string Color
+    +ColorBet(amount: int, color: string)
+    +Evaluate(result: int): bool
+}
+Bet <|-- ColorBet
+ 
+' Klasse: Wheel
+class Wheel {
+    -Random _random
+    +Spin(): int
+}
+ 
+' Klasse: RouletteTable
+class RouletteTable {
+    +List<Player> Players
+    +Wheel Wheel
+    +SpinWheel(): void
+    +GetPlayerBets(player: Player): void
+}
+RouletteTable --> Player : has
+RouletteTable --> Wheel : uses
+ 
+' Klasse: Program (Main)
+class Program {
+    +Main(args: string[]): void
+}
+Program --> RouletteTable : controls
+Program --> Player : creates
+Program --> Bet : uses
+ 
+@enduml
