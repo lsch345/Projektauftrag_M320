@@ -1,4 +1,4 @@
-﻿namespace Projekt_M320;
+﻿namespace ProjektM320;
 
 public class Program
 {
