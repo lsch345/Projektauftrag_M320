@@ -1,4 +1,4 @@
-﻿namespace ProjektM320;
+﻿    namespace ProjektM320;
 
 public class ColorBet : Bet
 {
